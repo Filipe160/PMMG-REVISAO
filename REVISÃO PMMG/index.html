@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Revisões PMMG</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Revisões — PMMG</h1>
+      <div class="header-actions">
+        <button id="toggleTheme">Alternar Tema</button>
+        <button id="clearAll">Limpar Tudo</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="form">
+        <label>Matéria
+          <select id="disciplinaSelect">
+            <option value="">-- selecione --</option>
+            <option value="portugues">Português</option>
+            <option value="matematica">Matemática</option>
+            <option value="ingles">Inglês</option>
+            <option value="direito">Noções de Direito</option>
+            <option value="literatura">Literatura</option>
+          </select>
+        </label>
+
+        <label>Conteúdo (ex.: Morfologia)
+          <input id="conteudoInput" type="text" placeholder="Ex: Morfologia" />
+        </label>
+
+        <label>Data do estudo
+          <input id="dataInput" type="date" />
+        </label>
+
+        <button id="addButton" class="primary">Adicionar</button>
+      </section>
+
+      <section id="listas" class="listas">
+        <div class="disciplina" id="box-portugues">
+          <h2>📌 Português</h2>
+          <ul id="lista-portugues" class="lista"></ul>
+        </div>
+
+        <div class="disciplina" id="box-matematica">
+          <h2>📌 Matemática</h2>
+          <ul id="lista-matematica" class="lista"></ul>
+        </div>
+
+        <div class="disciplina" id="box-ingles">
+          <h2>📌 Inglês</h2>
+          <ul id="lista-ingles" class="lista"></ul>
+        </div>
+
+        <div class="disciplina" id="box-direito">
+          <h2>📌 Noções de Direito</h2>
+          <ul id="lista-direito" class="lista"></ul>
+        </div>
+
+        <div class="disciplina" id="box-literatura">
+          <h2>📌 Literatura</h2>
+          <ul id="lista-literatura" class="lista"></ul>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <small>Salvo localmente no navegador • Intervalos: 7, 14, 20, 30 dias</small>
+    </footer>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
